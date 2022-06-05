@@ -31,6 +31,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - run: cd cloud_challenge && sam build --use-container
-      - run: cd cloud_challenge && sam deploy --resolve-s3
+      - run: cd cloud_challenge && sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
       - name: Update static files with S3
         run: aws s3 cp frontend/. s3://test-bucket/ --recursive
