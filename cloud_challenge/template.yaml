@@ -58,7 +58,8 @@ Resources:
           Properties:
             Path: /visitor_count
             Method: get
- DynamoDBTable:
+            
+  DynamoDBTable:
    Type: AWS::DynamoDB::Table
    Properties:
      TableName: VisitorCount
