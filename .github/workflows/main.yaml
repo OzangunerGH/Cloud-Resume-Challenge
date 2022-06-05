@@ -20,3 +20,5 @@ jobs:
           pip3 install boto3
       - name: test get-function
         run: cd getFunction && python3 test.py -v && cd ..
+      - name: Update static files with S3
+        run: aws s3 cp frontend/. s3://mystatic-resume-website/ --recursive
