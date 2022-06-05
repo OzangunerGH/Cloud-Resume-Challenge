@@ -1,4 +1,4 @@
-from function import app
+from cloud-challenge.function import app
 import os
 
 def test_lambda_handler():
