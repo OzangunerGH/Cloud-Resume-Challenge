@@ -1,4 +1,4 @@
-from getFunction import app
+from function import app
 import os
 
 def test_lambda_handler():
