@@ -10,7 +10,7 @@ def test_lambda_handler():
 
     # assert return keys
     assert "statusCode" in response
-    assert "header" in response
+    assert "headers" in response
     assert "body" in response
 
     # checking headers for CORS
@@ -19,9 +19,7 @@ def test_lambda_handler():
     assert "Access-Control-Allow-Headers" in response["headers"]
 
     # checking status code
-    if response["statusCode"] != 200 or response_2["body"] != response["body"] + 1:
-        return exit(1)
-    else:
-        return exit(0)
+    assert response["statusCode"] == 200
+    assert response_2["body"] == response["body"] + 1
         
 test_lambda_handler()
