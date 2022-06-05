@@ -13,7 +13,7 @@ Globals:
 Parameters:
   BucketName:
     Type: String
-    Default: test-bucket
+    Default: mystatic-resume-website
 
 Resources:
 
