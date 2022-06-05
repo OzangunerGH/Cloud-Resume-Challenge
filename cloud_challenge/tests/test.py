@@ -1,5 +1,5 @@
 import os
-from function import app
+from cloud_challenge.function.app import lambda_handler as app.lambda_handler
 
 def test_lambda_handler():
     # Checking AWS Credentials
