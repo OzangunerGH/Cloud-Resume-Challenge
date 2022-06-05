@@ -21,5 +21,5 @@ def test_lambda_handler():
 
     # checking status code
     if response["statusCode"] == 200:
-        assert response_2["body"] == response["body"] + 1:
+        assert response_2["body"] == response["body"] + 1
     return
