@@ -22,7 +22,7 @@ async function get_visitors() {
         let response = await fetch('https://ahwlkl4zp8.execute-api.us-east-1.amazonaws.com/prod', {
             method: 'GET',
             headers: {
-                'x-api-key': '91P74Jtwbq5YJLJBJTElz6KxTXYotead9YQY9EvM',
+                // 'x-api-key': '91P74Jtwbq5YJLJBJTElz6KxTXYotead9YQY9EvM',
             }
         });
         let data = await response.json()
