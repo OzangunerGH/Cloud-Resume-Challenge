@@ -49,7 +49,7 @@ Resources:
       Policies:
         - DynamoDBCrudPolicy:
             TableName: VisitorCount
-      CodeUri: getFunction/
+      CodeUri: function/
       Handler: app.lambda_handler
       Runtime: python3.9
       Events:
