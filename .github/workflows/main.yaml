@@ -20,5 +20,18 @@ jobs:
           pip3 install boto3
       - name: test get-function
         run: cd cloud_challenge && cd function && python3 test.py -v && cd ..
+  deploy_infra:
+    needs: test-infra
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: aws-actions/setup-sam@v1
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - run: cd cloud_challenge && sam build --use-container
+      - run: cd cloud_challenge && sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
       - name: Update static files with S3
-        run: aws s3 cp frontend/. s3://mystatic-resume-website/ --recursive
+        run: aws s3 cp frontend/. s3://test-bucket/ --recursive
