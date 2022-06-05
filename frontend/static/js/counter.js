@@ -1,6 +1,6 @@
 //async function post_visitor() {
 //    try {
-//        let response = await fetch('https://tkn8j97oy9.execute-api.us-east-1.amazonaws.com/Prod/visitor_count', {
+//        let response = await fetch('https://ahwlkl4zp8.execute-api.us-east-1.amazonaws.com/prod', {
 //            method: 'POST',
 //            headers: {
 //                //'x-api-key': '91P74Jtwbq5YJLJBJTElz6KxTXYotead9YQY9EvM'
@@ -19,7 +19,7 @@ async function get_visitors() {
     // call post api request function
     // await post_visitor();
     try {
-        let response = await fetch('https://tkn8j97oy9.execute-api.us-east-1.amazonaws.com/Prod/visitor_count', {
+        let response = await fetch('https://ahwlkl4zp8.execute-api.us-east-1.amazonaws.com/prod', {
             method: 'GET',
             headers: {
                 //'x-api-key': '91P74Jtwbq5YJLJBJTElz6KxTXYotead9YQY9EvM',
