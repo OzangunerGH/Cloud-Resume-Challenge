@@ -19,6 +19,6 @@ jobs:
         run:
           pip3 install boto3
       - name: test get-function
-        run: cd cloud_challenge && cd tests && python3 test.py -v && cd ..
+        run: cd cloud_challenge && cd function && python3 test.py -v && cd ..
       - name: Update static files with S3
         run: aws s3 cp frontend/. s3://mystatic-resume-website/ --recursive
