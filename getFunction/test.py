@@ -1,7 +1,5 @@
 import app
 
-
-
 def test_lambda_handler():
     # Checking AWS Credentials
     assert "AWS_ACCESS_KEY_ID" in os.environ
@@ -22,4 +20,3 @@ def test_lambda_handler():
     # checking status code
     if response["statusCode"] == 200:
         assert response_2["body"] == response["body"] + 1
-    return
