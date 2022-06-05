@@ -1,2 +1,2 @@
-# CRC-Backend
-Cloud Resume Challenge - Back End Repository
+# Cloud Resume Challenge
+Cloud Resume Challenge - Front End & Back End Repository for CI/CD
