@@ -1,12 +1,12 @@
 import os
-from cloud_challenge.function.app import lambda_handler as app.lambda_handler
+from cloud_challenge.function.app import lambda_handler as lambda_handler
 
 def test_lambda_handler():
     # Checking AWS Credentials
     assert "AWS_ACCESS_KEY_ID" in os.environ
     assert "AWS_SECRET_ACCESS_KEY" in os.environ
-    response = app.lambda_handler("", "")
-    response_2 = app.lambda_handler("", "")
+    response = lambda_handler("", "")
+    response_2 = lambda_handler("", "")
 
     # assert return keys
     assert "statusCode" in response
