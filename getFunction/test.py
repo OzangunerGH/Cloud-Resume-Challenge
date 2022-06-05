@@ -19,7 +19,7 @@ def test_lambda_handler():
     assert "Access-Control-Allow-Headers" in response["headers"]
 
     # checking status code
-    if response["statusCode"] != 200 or reponse_2["body"] != response["body"] + 1:
+    if response["statusCode"] != 200 or response_2["body"] != response["body"] + 1:
         return exit(1)
     else:
         return exit(0)
