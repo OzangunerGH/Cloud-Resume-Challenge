@@ -23,3 +23,4 @@ def test_lambda_handler():
     else:
         return exit(0)
         
+test_lambda_handler()
