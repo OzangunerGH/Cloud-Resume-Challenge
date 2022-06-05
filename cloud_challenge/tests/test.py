@@ -1,4 +1,6 @@
-from cloud_challenge.function import app
+import sys
+sys.path.insert(0, '/cloud_challenge/function')
+import app
 import os
 
 def test_lambda_handler():
