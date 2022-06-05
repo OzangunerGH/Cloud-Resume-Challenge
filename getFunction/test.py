@@ -10,7 +10,7 @@ def test_lambda_handler():
 
     # assert return keys
     assert "statusCode" in response
-    assert "headers" in response
+    assert "header" in response
     assert "body" in response
 
     # checking headers for CORS
