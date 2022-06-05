@@ -58,8 +58,6 @@ Resources:
           Properties:
             Path: /visitor_count
             Method: get
-            RestApiId:
-              Ref: VisitorCountApi
  DynamoDBTable:
    Type: AWS::DynamoDB::Table
    Properties:
