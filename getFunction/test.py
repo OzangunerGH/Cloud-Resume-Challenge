@@ -1,4 +1,5 @@
 import app
+import os
 
 def test_lambda_handler():
     # Checking AWS Credentials
