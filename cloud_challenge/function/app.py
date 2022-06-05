@@ -9,13 +9,14 @@ table = dynamodb.Table(ddbTableName)
 def lambda_handler(event, context):
     # Update item in table or add if doesn't exist
     ddbResponse = table.update_item(
-        Key={'id': 'count'},
-        UpdateExpression='SET visitor_count = visitor_count + :val1',
+        Key={'ID': 'count'},
+        UpdateExpression='ADD #att :val1',  
+        ConditionExpression="attribute_not_exists(#a)",
+        ExpressionAttributeNames={"#att": "visitor_count", "#a": "attribute"}, 
         ExpressionAttributeValues={
             ':val1': 1
         },
-        ReturnValues="UPDATED_NEW"
-    )
+        ReturnValues="UPDATED_NEW")
 
     # Format dynamodb response into variable
 
