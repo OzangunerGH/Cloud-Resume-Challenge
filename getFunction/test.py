@@ -19,7 +19,7 @@ def test_lambda_handler():
 
     # checking status code
     if response["statusCode"] != 200 or reponse_2["body"] != response["body"] + 1:
-            exit(1)
+        return exit(1)
     else:
-        exit(0)
+        return exit(0)
         
