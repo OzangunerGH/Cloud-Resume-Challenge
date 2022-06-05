@@ -21,6 +21,7 @@ jobs:
       - name: test get-function
         run: cd cloud_challenge && cd function && python3 test.py -v && cd ..
   deploy_infra:
+    needs: test-infra
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
