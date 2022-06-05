@@ -16,7 +16,6 @@ Parameters:
     Default: mystatic-resume-website
 
 Resources:
-
   S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
@@ -42,7 +41,7 @@ Resources:
               - - 'arn:aws:s3:::'
                 - !Ref S3Bucket
                 - /*
-                -
+                
   VisitorCountFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
