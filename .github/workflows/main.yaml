@@ -34,4 +34,4 @@ jobs:
       - run: cd cloud_challenge && sam build --use-container
       - run: cd cloud_challenge && sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
       - name: Update static files with S3
-        run: aws s3 cp cloud-challenge/frontend/. s3://mystatic-resume-website/ --recursive
+        run: aws s3 cp cloud_challenge/frontend/. s3://mystatic-resume-website/ --recursive
