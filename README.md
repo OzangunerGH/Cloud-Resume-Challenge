@@ -16,4 +16,4 @@ To upload/update website files to your S3 bucket, use this command
 
 aws s3 cp yourpathtowebsitefiles/. s3://yourbucketname/ --recursive
 
-Currently these steps are implemented through GitHub actions.
+Currently these steps are implemented through GitHub actions and applied after tests are successful.
