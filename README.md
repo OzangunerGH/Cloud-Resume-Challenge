@@ -1,9 +1,9 @@
 # Cloud-Resume-Challenge
-Cloud Resume Challenge
 
-This is a implementation of the #CloudResumeChallenge on AWS using a Serverless architecture.
 
-You can view the end result at www.ozangunercloud.ga
+This is a implementation of the #CloudResumeChallenge on AWS using a Serverless Architecture.
+
+You can view the final result of the challenge at www.ozangunercloud.ga
 
 ![Alt text](https://i.imgur.com/SPXgoSd.png)
 
