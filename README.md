@@ -5,8 +5,7 @@ This is a implementation of the #CloudResumeChallenge on AWS using a Serverless 
 
 You can view the end result at www.ozangunercloud.ga
 
-![Alt text](https://ibb.co/Y2t5XxM)
-
+![Alt text](https://i.ibb.co/1Z9CMk5/workflow-edited.png)
 
 To deploy SAM template to stack, apply following commands : 
 
