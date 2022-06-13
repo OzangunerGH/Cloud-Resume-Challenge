@@ -14,6 +14,7 @@ You can read more about my experience with the challenge at **https://dev.to/oza
 To deploy SAM template to stack, apply following commands : 
 
 sam build
+
 sam deploy
 
 To upload/update website files to your S3 bucket, use this command
