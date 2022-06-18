@@ -3,9 +3,9 @@
 
 This is a implementation of the #CloudResumeChallenge on AWS using a Serverless Architecture.
 
-You can view the final result of the challenge at **www.ozangunercloud.ga**
+You can view the outcome of the challenge at **www.ozangunercloud.ga**
 
-You can read more about my experience with the challenge at **https://dev.to/ozanguner/the-cloud-resume-challenge-27cd**
+You can read more about my experience with the challenge **[here](https://dev.to/ozanguner/the-cloud-resume-challenge-27cd)**
 
 
 
